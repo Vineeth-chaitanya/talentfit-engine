@@ -8,7 +8,6 @@
 
 This project is intentionally built as a **local-first MVP**. The core system does not require OpenAI, Claude, Gemini, or any paid API key.
 
-It uses deterministic extraction, a skill taxonomy, TF-IDF, and local sentence-transformer embeddings when available. That makes the output easier to debug and defend in an interview. It is **not** a hiring decision system, not a calibrated probability of job success, and not a replacement for recruiter review.
 
 ## Why it matters
 
@@ -20,8 +19,6 @@ Resume matching is a strong ML engineering use case because it combines several 
 - explainability and evidence grounding
 - API design and UI integration
 - evaluation beyond a single demo example
-
-The goal is to show how an ML engineer can design a practical AI system that is transparent, testable, and deployable.
 
 ## Architecture
 
@@ -152,9 +149,6 @@ The score is a weighted heuristic, not a trained prediction model. It is designe
 
 The weights live in `app/core/matcher.py`.
 
-### Why this is defensible
-
-The system exposes the score breakdown instead of hiding behind a black-box number. In an interview, I would explain that these weights are product assumptions. In production, I would tune them using recruiter feedback, interview outcomes, or a labeled candidate-job relevance dataset.
 
 ## Evaluation methodology
 
@@ -171,7 +165,7 @@ python -m evals.eval_extraction
 python -m evals.eval_matching
 ```
 
-This is intentionally described as a **smoke evaluation**, not a benchmark. A stronger evaluation would require more resumes, more job families, independent labels, and calibration against recruiter decisions.
+
 
 ## Tests
 
@@ -230,38 +224,6 @@ talentfit-engine/
   tests/
 ```
 
-## Demo screenshots
-
-Add screenshots after running the Streamlit app:
-
-```text
-docs/screenshots/upload_resume.png
-docs/screenshots/match_score.png
-docs/screenshots/fit_report.png
-```
-
-## Design choices and tradeoffs
-
-### 1. Taxonomy-based skill extraction instead of pure LLM extraction
-
-This makes the MVP deterministic, local, and easy to test. The tradeoff is that unknown skills are missed until the taxonomy is updated.
-
-### 2. Hybrid ranker instead of a black-box classifier
-
-A hybrid score is easier to explain and debug. The tradeoff is that the weights are manually chosen and not calibrated from outcomes.
-
-### 3. Evidence snippets are constrained to resume text
-
-This reduces hallucinated feedback. The tradeoff is that suggestions can be conservative when the resume implies a skill indirectly but does not say it clearly.
-
-### 4. Heuristic job parsing
-
-The system can separate required and preferred skills when the JD uses clear wording. It can misclassify skills in messy postings, especially when requirements and preferences are mixed in one paragraph.
-
-### 5. Local embeddings
-
-Local sentence-transformers avoid paid APIs and protect privacy. The tradeoff is a heavier install and a first-run model download.
-
 ## Limitations
 
 - The parser is not layout-aware; complex PDF formatting can still hurt extraction quality.
@@ -274,32 +236,7 @@ Local sentence-transformers avoid paid APIs and protect privacy. The tradeoff is
 
 ## Future work
 
-- Add optional LLM structured extraction behind `USE_OPTIONAL_LLM=true`, with strict JSON schemas and validation.
-- Add layout-aware resume parsing for complex PDFs.
-- Add pgvector or another vector database for persistent candidate/job search.
-- Add cross-encoder reranking for more accurate semantic matching.
-- Add section-aware and recency-aware scoring.
-- Add confidence scores for extracted skills and requirements.
-- Build a larger labeled evaluation set across ML, analytics, backend, and data engineering roles.
-- Add CI with linting, tests, Docker build, and evaluation checks.
-- Add a multi-candidate recruiter view.
-- Add human feedback loops to tune weights and improve taxonomy coverage.
+- Extending to this we can use LLM structured extraction behind `USE_OPTIONAL_LLM=true`, with strict JSON schemas and validation.
 
-## Resume bullets
 
-Use these only after you can explain the implementation and tradeoffs clearly:
 
-- Built **TalentFit Engine**, an explainable resume-to-job matching system with FastAPI, Streamlit, Pydantic schemas, PDF/DOCX parsing, and Dockerized local deployment.
-- Implemented taxonomy-based skill normalization for 80+ technical skills, resolving aliases such as `Postgres`, `sklearn`, `PowerBI`, `gen ai`, and `vector db` into canonical skill labels.
-- Designed a hybrid fit-scoring engine combining required/preferred skill coverage, sentence-transformer semantic similarity, TF-IDF similarity, explicit experience alignment, and project relevance into an auditable 0–100 score.
-- Built grounded explainability features including matched/missing skills, weak partial matches, risk flags, and resume evidence snippets used to generate job-specific improvement suggestions without fabricating claims.
-- Added a lightweight evaluation harness for extraction precision/recall/F1, matching sanity checks, and latency tracking, plus pytest coverage for normalization, matching, evidence extraction, and API health.
-
-## Interview talking points
-
-- **Why not only use an LLM?** The MVP is local-first and deterministic. I wanted a system that is testable, privacy-friendly, and explainable before adding optional LLM extraction.
-- **How does the score work?** It is a hybrid heuristic. Required skill coverage has the highest weight, while semantic and TF-IDF similarity capture broader text alignment. The score breakdown is returned so users can audit it.
-- **How do you prevent hallucinated suggestions?** Suggestions must include evidence from the resume text. Missing-skill suggestions tell the user to add the skill only if truthful or to build evidence first.
-- **What is the biggest weakness?** The taxonomy and heuristic parser limit recall. A production system needs broader labeled data, better parsing, calibration, and human feedback.
-- **How would you productionize it?** I would add CI, logging, monitoring, persistent storage, a vector index, async processing for large files, model/version tracking, and a larger evaluation set.
-- **How would you evaluate it better?** I would collect labeled candidate-job pairs, evaluate extraction and ranking separately, measure top-k relevance, compare against recruiter judgments, and calibrate score thresholds by role family.
