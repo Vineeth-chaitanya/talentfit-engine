@@ -1,0 +1,634 @@
+[
+  {
+    "canonical": "Python",
+    "category": "Programming Languages",
+    "synonyms": [
+      "py",
+      "python3"
+    ]
+  },
+  {
+    "canonical": "R",
+    "category": "Programming Languages",
+    "synonyms": [
+      "r language"
+    ]
+  },
+  {
+    "canonical": "SQL",
+    "category": "Programming Languages",
+    "synonyms": [
+      "structured query language"
+    ]
+  },
+  {
+    "canonical": "Java",
+    "category": "Programming Languages",
+    "synonyms": []
+  },
+  {
+    "canonical": "JavaScript",
+    "category": "Programming Languages",
+    "synonyms": [
+      "js"
+    ]
+  },
+  {
+    "canonical": "TypeScript",
+    "category": "Programming Languages",
+    "synonyms": [
+      "ts"
+    ]
+  },
+  {
+    "canonical": "C++",
+    "category": "Programming Languages",
+    "synonyms": [
+      "cpp",
+      "c plus plus"
+    ]
+  },
+  {
+    "canonical": "Scala",
+    "category": "Programming Languages",
+    "synonyms": []
+  },
+  {
+    "canonical": "Bash",
+    "category": "Programming Languages",
+    "synonyms": [
+      "shell scripting"
+    ]
+  },
+  {
+    "canonical": "pandas",
+    "category": "Analytics",
+    "synonyms": [
+      "panda"
+    ]
+  },
+  {
+    "canonical": "NumPy",
+    "category": "Analytics",
+    "synonyms": [
+      "numpy"
+    ]
+  },
+  {
+    "canonical": "scikit-learn",
+    "category": "Machine Learning",
+    "synonyms": [
+      "sklearn",
+      "scikit learn"
+    ]
+  },
+  {
+    "canonical": "XGBoost",
+    "category": "Machine Learning",
+    "synonyms": [
+      "xgboost"
+    ]
+  },
+  {
+    "canonical": "LightGBM",
+    "category": "Machine Learning",
+    "synonyms": [
+      "light gbm"
+    ]
+  },
+  {
+    "canonical": "Random Forest",
+    "category": "Machine Learning",
+    "synonyms": [
+      "random forests"
+    ]
+  },
+  {
+    "canonical": "Logistic Regression",
+    "category": "Machine Learning",
+    "synonyms": []
+  },
+  {
+    "canonical": "Time Series",
+    "category": "Machine Learning",
+    "synonyms": [
+      "forecasting"
+    ]
+  },
+  {
+    "canonical": "A/B Testing",
+    "category": "Analytics",
+    "synonyms": [
+      "ab testing",
+      "experiment testing"
+    ]
+  },
+  {
+    "canonical": "Causal Inference",
+    "category": "Analytics",
+    "synonyms": [
+      "causal analysis"
+    ]
+  },
+  {
+    "canonical": "Statistics",
+    "category": "Analytics",
+    "synonyms": [
+      "statistical modeling"
+    ]
+  },
+  {
+    "canonical": "TensorFlow",
+    "category": "Machine Learning",
+    "synonyms": [
+      "tf"
+    ]
+  },
+  {
+    "canonical": "PyTorch",
+    "category": "Machine Learning",
+    "synonyms": [
+      "torch"
+    ]
+  },
+  {
+    "canonical": "Deep Learning",
+    "category": "Machine Learning",
+    "synonyms": [
+      "neural networks"
+    ]
+  },
+  {
+    "canonical": "Feature Engineering",
+    "category": "Machine Learning",
+    "synonyms": []
+  },
+  {
+    "canonical": "Model Evaluation",
+    "category": "Machine Learning",
+    "synonyms": [
+      "model validation"
+    ]
+  },
+  {
+    "canonical": "Hyperparameter Tuning",
+    "category": "Machine Learning",
+    "synonyms": [
+      "hyper parameter tuning"
+    ]
+  },
+  {
+    "canonical": "Recommender Systems",
+    "category": "Machine Learning",
+    "synonyms": [
+      "recommendation systems",
+      "recommendation engine"
+    ]
+  },
+  {
+    "canonical": "NLP",
+    "category": "NLP",
+    "synonyms": [
+      "natural language processing"
+    ]
+  },
+  {
+    "canonical": "spaCy",
+    "category": "NLP",
+    "synonyms": [
+      "spacy"
+    ]
+  },
+  {
+    "canonical": "NLTK",
+    "category": "NLP",
+    "synonyms": []
+  },
+  {
+    "canonical": "Transformers",
+    "category": "NLP",
+    "synonyms": [
+      "transformer models"
+    ]
+  },
+  {
+    "canonical": "BERT",
+    "category": "NLP",
+    "synonyms": []
+  },
+  {
+    "canonical": "Sentence Transformers",
+    "category": "NLP",
+    "synonyms": [
+      "sentence-transformers",
+      "sbert"
+    ]
+  },
+  {
+    "canonical": "Named Entity Recognition",
+    "category": "NLP",
+    "synonyms": [
+      "ner"
+    ]
+  },
+  {
+    "canonical": "Text Classification",
+    "category": "NLP",
+    "synonyms": []
+  },
+  {
+    "canonical": "Information Extraction",
+    "category": "NLP",
+    "synonyms": []
+  },
+  {
+    "canonical": "Generative AI",
+    "category": "LLM / GenAI",
+    "synonyms": [
+      "gen ai",
+      "genai",
+      "generative-ai"
+    ]
+  },
+  {
+    "canonical": "LLM",
+    "category": "LLM / GenAI",
+    "synonyms": [
+      "large language model",
+      "large language models"
+    ]
+  },
+  {
+    "canonical": "Prompt Engineering",
+    "category": "LLM / GenAI",
+    "synonyms": [
+      "prompting"
+    ]
+  },
+  {
+    "canonical": "RAG",
+    "category": "LLM / GenAI",
+    "synonyms": [
+      "retrieval augmented generation",
+      "retrieval-augmented generation"
+    ]
+  },
+  {
+    "canonical": "OpenAI API",
+    "category": "LLM / GenAI",
+    "synonyms": [
+      "openai"
+    ]
+  },
+  {
+    "canonical": "Gemini API",
+    "category": "LLM / GenAI",
+    "synonyms": [
+      "google gemini",
+      "gemini"
+    ]
+  },
+  {
+    "canonical": "LangChain",
+    "category": "LLM / GenAI",
+    "synonyms": [
+      "lang chain"
+    ]
+  },
+  {
+    "canonical": "LlamaIndex",
+    "category": "LLM / GenAI",
+    "synonyms": [
+      "llama index"
+    ]
+  },
+  {
+    "canonical": "Structured Extraction",
+    "category": "LLM / GenAI",
+    "synonyms": [
+      "structured outputs",
+      "json extraction"
+    ]
+  },
+  {
+    "canonical": "ETL",
+    "category": "Data Engineering",
+    "synonyms": [
+      "extract transform load"
+    ]
+  },
+  {
+    "canonical": "Airflow",
+    "category": "Data Engineering",
+    "synonyms": [
+      "apache airflow"
+    ]
+  },
+  {
+    "canonical": "Spark",
+    "category": "Data Engineering",
+    "synonyms": [
+      "apache spark",
+      "pyspark"
+    ]
+  },
+  {
+    "canonical": "Kafka",
+    "category": "Data Engineering",
+    "synonyms": [
+      "apache kafka"
+    ]
+  },
+  {
+    "canonical": "dbt",
+    "category": "Data Engineering",
+    "synonyms": [
+      "data build tool"
+    ]
+  },
+  {
+    "canonical": "Data Pipelines",
+    "category": "Data Engineering",
+    "synonyms": [
+      "data pipeline"
+    ]
+  },
+  {
+    "canonical": "Data Modeling",
+    "category": "Data Engineering",
+    "synonyms": []
+  },
+  {
+    "canonical": "BigQuery",
+    "category": "Data Engineering",
+    "synonyms": [
+      "google bigquery"
+    ]
+  },
+  {
+    "canonical": "Snowflake",
+    "category": "Data Engineering",
+    "synonyms": []
+  },
+  {
+    "canonical": "PostgreSQL",
+    "category": "Databases",
+    "synonyms": [
+      "postgres",
+      "postgre sql"
+    ]
+  },
+  {
+    "canonical": "MySQL",
+    "category": "Databases",
+    "synonyms": []
+  },
+  {
+    "canonical": "SQLite",
+    "category": "Databases",
+    "synonyms": [
+      "sqlite3"
+    ]
+  },
+  {
+    "canonical": "MongoDB",
+    "category": "Databases",
+    "synonyms": [
+      "mongo"
+    ]
+  },
+  {
+    "canonical": "Redis",
+    "category": "Databases",
+    "synonyms": []
+  },
+  {
+    "canonical": "Elasticsearch",
+    "category": "Search / Retrieval",
+    "synonyms": [
+      "elastic search"
+    ]
+  },
+  {
+    "canonical": "FAISS",
+    "category": "Search / Retrieval",
+    "synonyms": [
+      "facebook ai similarity search"
+    ]
+  },
+  {
+    "canonical": "Vector Database",
+    "category": "Search / Retrieval",
+    "synonyms": [
+      "vector db",
+      "vector database",
+      "vectordb"
+    ]
+  },
+  {
+    "canonical": "Hybrid Search",
+    "category": "Search / Retrieval",
+    "synonyms": [
+      "hybrid retrieval"
+    ]
+  },
+  {
+    "canonical": "BM25",
+    "category": "Search / Retrieval",
+    "synonyms": []
+  },
+  {
+    "canonical": "Semantic Search",
+    "category": "Search / Retrieval",
+    "synonyms": [
+      "semantic retrieval"
+    ]
+  },
+  {
+    "canonical": "AWS",
+    "category": "Cloud",
+    "synonyms": [
+      "amazon web services"
+    ]
+  },
+  {
+    "canonical": "Azure",
+    "category": "Cloud",
+    "synonyms": [
+      "microsoft azure"
+    ]
+  },
+  {
+    "canonical": "Google Cloud",
+    "category": "Cloud",
+    "synonyms": [
+      "gcp",
+      "google cloud platform"
+    ]
+  },
+  {
+    "canonical": "S3",
+    "category": "Cloud",
+    "synonyms": [
+      "aws s3"
+    ]
+  },
+  {
+    "canonical": "Lambda",
+    "category": "Cloud",
+    "synonyms": [
+      "aws lambda"
+    ]
+  },
+  {
+    "canonical": "SageMaker",
+    "category": "Cloud",
+    "synonyms": [
+      "aws sagemaker"
+    ]
+  },
+  {
+    "canonical": "Docker",
+    "category": "MLOps",
+    "synonyms": [
+      "containerization"
+    ]
+  },
+  {
+    "canonical": "Kubernetes",
+    "category": "MLOps",
+    "synonyms": [
+      "k8s"
+    ]
+  },
+  {
+    "canonical": "MLflow",
+    "category": "MLOps",
+    "synonyms": [
+      "ml flow"
+    ]
+  },
+  {
+    "canonical": "CI/CD",
+    "category": "MLOps",
+    "synonyms": [
+      "cicd",
+      "continuous integration",
+      "continuous deployment"
+    ]
+  },
+  {
+    "canonical": "Git",
+    "category": "MLOps",
+    "synonyms": [
+      "github",
+      "gitlab"
+    ]
+  },
+  {
+    "canonical": "Model Monitoring",
+    "category": "MLOps",
+    "synonyms": [
+      "monitoring"
+    ]
+  },
+  {
+    "canonical": "FastAPI",
+    "category": "Backend",
+    "synonyms": [
+      "fast api",
+      "fast-api"
+    ]
+  },
+  {
+    "canonical": "Flask",
+    "category": "Backend",
+    "synonyms": []
+  },
+  {
+    "canonical": "REST API",
+    "category": "Backend",
+    "synonyms": [
+      "restful api",
+      "api development"
+    ]
+  },
+  {
+    "canonical": "Streamlit",
+    "category": "Backend",
+    "synonyms": [
+      "stream lit"
+    ]
+  },
+  {
+    "canonical": "Pydantic",
+    "category": "Backend",
+    "synonyms": []
+  },
+  {
+    "canonical": "Power BI",
+    "category": "Visualization",
+    "synonyms": [
+      "powerbi",
+      "power-bi"
+    ]
+  },
+  {
+    "canonical": "Tableau",
+    "category": "Visualization",
+    "synonyms": []
+  },
+  {
+    "canonical": "Matplotlib",
+    "category": "Visualization",
+    "synonyms": []
+  },
+  {
+    "canonical": "Plotly",
+    "category": "Visualization",
+    "synonyms": []
+  },
+  {
+    "canonical": "Excel",
+    "category": "Analytics",
+    "synonyms": [
+      "microsoft excel"
+    ]
+  },
+  {
+    "canonical": "Jupyter",
+    "category": "Analytics",
+    "synonyms": [
+      "jupyter notebook"
+    ]
+  },
+  {
+    "canonical": "GitHub Actions",
+    "category": "MLOps",
+    "synonyms": [
+      "github actions"
+    ]
+  },
+  {
+    "canonical": "pytest",
+    "category": "MLOps",
+    "synonyms": [
+      "py test"
+    ]
+  },
+  {
+    "canonical": "React",
+    "category": "Frontend",
+    "synonyms": [
+      "react.js",
+      "reactjs"
+    ]
+  },
+  {
+    "canonical": "CSS",
+    "category": "Frontend",
+    "synonyms": [
+      "cascading style sheets"
+    ]
+  }
+]

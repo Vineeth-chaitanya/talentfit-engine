@@ -1,0 +1,65 @@
+[
+  {
+    "id": "nlp_backend_001",
+    "resume_path": "app/data/sample_resume.txt",
+    "job_path": "app/data/sample_job_description.txt",
+    "expected_resume_skills": [
+      "Sentence Transformers",
+      "Structured Extraction",
+      "Hybrid Search",
+      "Semantic Search",
+      "Data Pipelines",
+      "scikit-learn",
+      "Transformers",
+      "A/B Testing",
+      "Gemini API",
+      "PostgreSQL",
+      "Streamlit",
+      "Power BI",
+      "XGBoost",
+      "FastAPI",
+      "Python",
+      "pandas",
+      "OpenAI API",
+      "Docker",
+      "NumPy",
+      "SQL",
+      "NLP",
+      "RAG",
+      "Git",
+      "TensorFlow",
+      "R"
+    ],
+    "expected_score_min": 40,
+    "expected_score_max": 95
+  },
+  {
+    "id": "analytics_002",
+    "resume_text": "Data analyst with SQL, Excel, Tableau, PowerBI, A/B Testing, Statistics and Python experience.",
+    "job_text": "Required: SQL, Python, A/B Testing, Statistics. Preferred: Tableau and Power BI.",
+    "expected_resume_skills": [
+      "SQL",
+      "Excel",
+      "Tableau",
+      "Power BI",
+      "A/B Testing",
+      "Statistics",
+      "Python"
+    ],
+    "expected_score_min": 65,
+    "expected_score_max": 100
+  },
+  {
+    "id": "weak_fit_003",
+    "resume_text": "Frontend developer with React, JavaScript, CSS, Git and UI testing experience.",
+    "job_text": "Required: Python, NLP, FastAPI, Docker, PostgreSQL, Sentence Transformers. Preferred: Vector Database and MLflow.",
+    "expected_resume_skills": [
+      "React",
+      "JavaScript",
+      "CSS",
+      "Git"
+    ],
+    "expected_score_min": 0,
+    "expected_score_max": 45
+  }
+]

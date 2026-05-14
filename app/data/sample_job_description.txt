@@ -1,0 +1,13 @@
+Job Title: Machine Learning Engineer - NLP and Retrieval
+
+Responsibilities
+Build and deploy NLP services for candidate-job matching, semantic search, and recommendation systems.
+Develop FastAPI services, maintain Dockerized deployments, and collaborate with data engineers on ML pipelines.
+Evaluate models using precision, recall, F1, latency, and ranking quality metrics.
+
+Required Qualifications
+3+ years of experience with Python, SQL, scikit-learn, NLP, Sentence Transformers, FastAPI, Docker, PostgreSQL, and semantic search.
+Experience with RAG, Vector Database, model evaluation, and REST API development.
+
+Preferred Qualifications
+Kubernetes, AWS, MLflow, CI/CD, Elasticsearch, and Power BI are a plus.

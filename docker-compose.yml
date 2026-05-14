@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - USE_OPTIONAL_LLM=false
+      - EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+  ui:
+    build: .
+    depends_on:
+      - api
+    ports:
+      - "8501:8501"
+    environment:
+      - TALENTFIT_API_URL=http://api:8000
+    command: streamlit run ui/streamlit_app.py --server.address 0.0.0.0

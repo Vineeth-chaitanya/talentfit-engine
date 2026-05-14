@@ -1,0 +1,19 @@
+Vineeth Adapa
+Machine Learning Engineer
+
+Summary
+Machine learning engineer with 3 years of experience building NLP, recommendation, and analytics systems using Python, SQL, FastAPI, scikit-learn, and embeddings.
+
+Technical Skills
+Python, SQL, pandas, NumPy, scikit-learn, FastAPI, Docker, Git, Streamlit, Sentence Transformers, RAG, PostgreSQL, Power BI, XGBoost, A/B Testing
+
+Experience
+Built an AI-driven recommendation system using OpenAI embeddings and semantic search to match public health articles to reviewers. Developed reproducible data pipelines in R and Python for 70,000+ records.
+Designed FastAPI endpoints for an ML-backed wine recommendation app and used Gemini API for structured extraction of tasting notes.
+
+Projects
+Talent recommender project: built hybrid retrieval using TF-IDF, sentence-transformers, skill normalization, and explainable ranking.
+Bird strike risk modeling: trained negative binomial and XGBoost models and evaluated temporal risk patterns.
+
+Education
+MS in Information Systems, UMBC
