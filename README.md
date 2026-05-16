@@ -1,4 +1,4 @@
-# TalentFi
+# TalentFit
 
 **TalentFit** is an explainable resume-to-job matching system that parses a resume and job description, extracts structured skills, computes a fit score, and shows evidence-based strengths, gaps, and resume improvement suggestions.
 
